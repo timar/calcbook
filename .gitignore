@@ -1,0 +1,8 @@
+# Ignore tex temp files
+
+*.aux
+*.lof
+*.log
+*.out
+*.toc
+
