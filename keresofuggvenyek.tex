@@ -1,18 +1,18 @@
 \chapter{Keresőfüggvények használata}
 \thispagestyle{empty}
 
-A munkalap-függvények kategóriában találjuk azokat a gyakran
+A munkalapfüggvények kategóriában találjuk azokat a gyakran
 használt függvényeket, amelyek segítségével adatokat
 kereshetünk a táblázatban. 
 
-\section{A VLOOKUP, HLOOKUP függvények}
+\section{Az FKERES, VKERES függvények}
 
-A VLOOKUP függvény egy tartomány bal szélső oszlopában
+Az FKERES függvény egy tartomány bal szélső oszlopában
 megkeres egy értéket. Ennek az értéknek a sora, és a harmadik
 paraméterben megadott tartományon belüli oszlop sorszámának
 metszéspontján található cella tartalmát adja eredményül.
 
-Szintaxisa: =VLOOKUP(keresési feltétel;tömb;index;rendezett)
+Szintaxisa: =FKERES(keresési feltétel;tömb;index;rendezett)
 
 Attól függően, hogy a negyedik, rendezett nevű, opcionális
 paraméternek milyen értéket adunk, a függvény eltérően
@@ -23,7 +23,7 @@ Rendezett oszlop esetén a negyedik paraméter lehet IGAZ, vagy el is
 hagyhatjuk. A függvény ilyenkor közelítő eredményt is
 adhat. 
 
-Két feladaton keresztül vizsgáljuk meg a VLOOKUP függvény
+Két feladaton keresztül vizsgáljuk meg az FKERES függvény
 működését.
 
 
@@ -37,7 +37,7 @@ B19:E19 tartományban megjelenjenek az adott áru adatai.}
 
 \begin{figure}[!h]
 \begin{center}
-\includegraphics[width=11.804cm]{oocalcv1-img94.png}
+\includegraphics[width=11.804cm]{oocalcv2-img94.png}
 \caption{20. feladat}\label{20-feladat}
 \end{center}
 \end{figure}
@@ -50,13 +50,13 @@ a tartomány az A2:E17.
 
 Írjunk be egy kódot az A19 cellába. A B19 cellában kell, hogy
 megjelenjen az e kódhoz tartozó megnevezés. Ebben a cellában
-válasszuk a függvénytündért, és a VLOOKUP függvényt
+válasszuk a függvénytündért, és az FKERES függvényt
 (\ref{20-feladatVLOOKUP} ábra).
 
 \begin{figure}[!h]
 \begin{center}
-\includegraphics[width=15.999cm]{oocalcv1-img95.png}
-\caption{20. feladat -- VLOOKUP függvény}\label{20-feladatVLOOKUP}
+\includegraphics[width=15.999cm]{oocalcv2-img95.png}
+\caption{20. feladat -- FKERES függvény}\label{20-feladatVLOOKUP}
 \end{center}
 \end{figure}
 
@@ -66,7 +66,7 @@ paraméter maga a tömb. A harmadik, hogy melyik oszlopból kell az
 értéket venni. A feladat jellegéből következik, hogy most
 pontos egyezésre van szükség, a negyedik paramétert is meg kell
 adni: HAMIS. A függvény tehát:
-\textsf{\textbf{=VLOOKUP(A19;A2:E17;2;HAMIS)}} (\ref{20-feladatVLOOKUP}
+\textsf{\textbf{=FKERES(A19;A2:E17;2;HAMIS)}} (\ref{20-feladatVLOOKUP}
 ábra).
 
 A függvény működését a következőképpen
@@ -88,21 +88,21 @@ tizedesjegyek száma nulla legyen.
 
 \begin{figure}[!h]
 \begin{center}
-\includegraphics[width=10.104cm]{oocalcv1-img96.png}
+\includegraphics[width=10.104cm]{oocalcv2-img96.png}
 \caption{20. feladat -- eredmény}\label{20-feladatEredmény}
 \end{center}
 \end{figure}
 
 Ellenőrizzük a függvény működését
 különböző kódokat írva az A19 cellába. Nem létező
-kódot írva a \#HIANYZIK hibaüzenetet kapjuk.
+kódot írva a \#HIÁNYZIK hibaüzenetet kapjuk.
 
 
 \section{21. feladat}
 
 \begin{figure}[!h]
 \begin{center}
-\includegraphics[width=13.999cm]{oocalcv1-img97.png}
+\includegraphics[width=13.999cm]{oocalcv2-img97.png}
 \caption{21. feladat}\label{21-feladat}
 \end{center}
 \end{figure}
@@ -113,17 +113,17 @@ pontszámok alapján függvény segítségével határozzuk meg
 minden tanuló osztályzatát. A kritériumokat az M3:O7
 cellatartomány tartalmazza: 12 pontig -- Elégtelen (1), 12-től
 16 pontig -- Elégséges (2), 16-tól 19-ig -- Közepes (3),
- 19-től 24-ig -- Jó (4) és 24 ponttól jeles. A K oszlopban a
+ 19-től 24-ig -- Jó (4) és 24 ponttól Jeles (5). A K oszlopban a
 legtöbb pontszámot elért tanulók sorában jelenjen meg az
 ,,Igen'' szó. Az L1 cella azt mutassa,
 hogy hány tanuló érte el a legtöbb pontszámot.}
 
-Ennek a feladatnak a megoldásához is a VLOOKUP függvényt fogjuk
+Ennek a feladatnak a megoldásához is az FKERES függvényt fogjuk
 használni. Az M3:O7 tartomány első oszlopában fogja
 megkeresni a függvény minden tanuló pontszámát. A második,
 majd a harmadik oszlopból veszi az osztályzatot. Az M3:O7
-tartomány első oszlopa növekvő számsort tartalmaz. A
-VLOOKUP függvény ebben az esetben akkor is ad eredményt, ha nem
+tartomány első oszlopa növekvő számsort tartalmaz. Az
+FKERES függvény ebben az esetben akkor is ad eredményt, ha nem
 talál pontos egyezést, feltéve, hogy az érték a rendezett
 lista legalacsonyabb értékénél nagyobb.
 
@@ -133,8 +133,8 @@ vonatkozik (\ref{21-feladatVLOOKUP} ábra).
 
 \begin{figure}[!h]
 \begin{center}
-\includegraphics[width=13.999cm]{oocalcv1-img98.png}
-\caption{21. feladat --  VLOOKUP függvény}\label{21-feladatVLOOKUP}
+\includegraphics[width=13.999cm]{oocalcv2-img98.png}
+\caption{21. feladat --  FKERES függvény}\label{21-feladatVLOOKUP}
 \end{center}
 \end{figure}
 
@@ -143,7 +143,7 @@ alapértelmezett értéke IGAZ.
 
 A függvény másolása előtt abszolúttá kell tenni a
 \textbf{mátrix} paramétert. A végleges képlet tehát:
-\textsf{\textbf{=VLOOKUP(H2;\$M\$3:\$O\$7;2)}}.
+\textsf{\textbf{=FKERES(H2;\$M\$3:\$O\$7;2)}}.
 
 A J oszlopban a képlet csak a harmadik paraméterben
 különbözik. Itt a harmadik oszlopból kell az eredményt venni
@@ -151,43 +151,43 @@ különbözik. Itt a harmadik oszlopból kell az eredményt venni
 
 \begin{figure}[!h]
 \begin{center}
-\includegraphics[width=13.333cm]{oocalcv1-img99.png}
-\caption{21. feladat --  VLOOKUP függvény képlet}\label{21-feladatVLOOKUPKéplet}
+\includegraphics[width=13.333cm]{oocalcv2-img99.png}
+\caption{21. feladat --  FKERES függvény képlet}\label{21-feladatVLOOKUPKéplet}
 \end{center}
 \end{figure}
 
 Ahhoz, hogy a K oszlopban a legtöbb pontszámot elért tanulók
 sorában jelenjen meg az ,,Igen''
-szó, használhatjuk a IF és a MAX függvényt. A
+szó, használhatjuk a HA és a MAX függvényt. A
 függvénytündérrel hozzuk létre a következő
 kifejezést:
-\textsf{\textbf{=IF(MAX(H\$2:H\$10)=H2;"Igaz";"")}}.
+\textsf{\textbf{=HA(MAX(H\$2:H\$10)=H2;"Igen";"")}}.
 
 A legtöbb pontszámot szerzett tanulók számát
 kiszámíthatjuk az L1 cellában, összeszámolva az
 ,,Igen''-ek darabszámát a K oszlopban:
-\textsf{\textbf{=COUNTIF(K2:K10;"Igaz")}}.
+\textsf{\textbf{=DARABTELI(K2:K10;"Igen")}}.
 
 A megoldott feladatot \aref{21-feladatIF} ábrán látjuk.
 
 \begin{figure}[!h]
 \begin{center}
-\includegraphics[width=15.999cm]{oocalcv1-img100.png}
-\caption{21.  feladat --  IF képlet}\label{21-feladatIF}
+\includegraphics[width=15.999cm]{oocalcv2-img100.png}
+\caption{21.  feladat --  HA képlet}\label{21-feladatIF}
 \end{center}
 \end{figure}
 
-A HLOOKUP függvény, pontosan úgy működik, mint a VLOOKUP,
+A VKERES függvény pontosan úgy működik, mint az FKERES,
 csak a tartomány első oszlopa helyett az első sorban keres.
-Erre utal a függvények nevében az első betű: V --
-vertikális, H --  horizontális.
+Erre utal a függvények nevében az első betű: F --
+függőleges, V --  vízszintes.
 
 
-\section{A MATCH és az INDEX függvények}
+\section{A HOL.VAN és az INDEX függvények}
 
-A \textbf{MATCH} függvény a keresett elem tömbben elfoglalt
+A \textbf{HOL.VAN} függvény a keresett elem tömbben elfoglalt
 pozícióját adja vissza. A tömb egy sorból vagy egy
-oszlopból állhat. Szintaxisa: MATCH(keresési
+oszlopból állhat. Szintaxisa: HOL.VAN(keresési
 feltétel;keresési\_tartomány;típus). A harmadik
 \textbf{típus} paraméternek 0 értéket kell adni, ha pontos
 egyezést keresünk. Amikor több ilyen is van, az első
@@ -206,15 +206,15 @@ legkevesebb pontszámot.
 
 \Aref{MATCHFüggvény} ábrán látjuk, hogy az első paraméter a MIN(H2:H10)
 függvény, ami megadja a legkisebb számot a H2:H10 tartományban.
-Ennek a számnak a sorszámát találja meg a MATCH függvény,
+Ennek a számnak a sorszámát találja meg a HOL.VAN függvény,
 mert keresési tartomány is a H2:H10. Látjuk, hogy az eredmény
 5, tehát a névsorban az ötödik  tanuló érte el a
 legkevesebb pontszámot.
 
 \begin{figure}[!h]
 \begin{center}
-\includegraphics[width=15.999cm]{oocalcv1-img101.png}
-\caption{MATCH függvény struktúrája}\label{MATCHFüggvény}
+\includegraphics[width=15.999cm]{oocalcv2-img101.png}
+\caption{HOL.VAN függvény struktúrája}\label{MATCHFüggvény}
 \end{center}
 \end{figure}
 
@@ -226,9 +226,9 @@ zárójelek között kell megadni. A negyedik paraméter
 opcionális, csak akkor kell megadni, ha  több tartományból
 áll a hivatkozás.
 
-A MATCH függvényt gyakran használják az INDEX beágyazott
+A HOL.VAN függvényt gyakran használják az INDEX beágyazott
 függvényeként. Olyan keresési feladatokat is megoldhatunk
-ezekkel a függvényekkel, amelyeket a VLOOKUP, HLOOKUP
+ezekkel a függvényekkel, amelyeket az FKERES, VKERES
 függvényekkel nem. A következő feladatban vizsgáljunk meg
 egy ilyen esetet.
 
@@ -243,21 +243,21 @@ dátumot.}
 
 \begin{figure}[!h]
 \begin{center}
-\includegraphics[width=8.888cm]{oocalcv1-img102.png}
+\includegraphics[width=8.888cm]{oocalcv2-img102.png}
 \caption{22. feladat}\label{22-feladat}
 \end{center}
 \end{figure}
 
 A táblázatot megfigyelve láthatjuk, hogy itt a C oszlopban kell
 megkeresni egy értéket és a tőle balra lévő oszlopból
-megjeleníteni a hozzá tartozó tartalmat. A VLOOKUP függvényt
+megjeleníteni a hozzá tartozó tartalmat. Az FKERES függvényt
 ezért itt nem használhatjuk, illetve csak akkor, ha segédoszlopot
 alkalmazunk, másolatot készítve az A2:A13 tartományról a
 bevétel oszlopától jobbra, például a D oszlopba. Amikor nem
 alkalmazhatjuk ezt a módszert, más függvényt kell
 használnunk.
 
-A MATCH függvénnyel keressük meg melyik sorban van a legnagyobb
+A HOL.VAN függvénnyel keressük meg melyik sorban van a legnagyobb
 szám a B2:B12 tartományban, és ez lesz az INDEX függvény sor
 paramétere. Az oszlop paraméter 1 lesz, a tartomány pedig az
 A2:C13.
@@ -267,7 +267,7 @@ kifejezést (\ref{INDEXFüggvény} ábra).
 
 \begin{figure}[!h]
 \begin{center}
-\includegraphics[width=15.999cm]{oocalcv1-img103.png}
+\includegraphics[width=15.999cm]{oocalcv2-img103.png}
 \caption{22. feladat INDEX függvény struktúrája}\label{INDEXFüggvény}
 \end{center}
 \end{figure}

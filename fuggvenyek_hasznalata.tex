@@ -18,11 +18,11 @@ egymástól. A függvény általános alakja tehát:
 
 Van olyan függvény is, amelynek nincs argumentuma, a zárójeleket
 ilyenkor sem hagyhatjuk el. Például a matematikában használatos
-pi számot meg tudjuk adni cellában függvénnyel: =PI()
+${\pi}$ számot meg tudjuk adni cellában függvénnyel: =PI().
 
-A leggyakrabban használt függvény a SUM, ami összeadja az
-argumentumlistájában lévő számokat. A SUM függvény a
-következő argumentummal =SUM(A1:A4;C2) egyenértékű az
+A leggyakrabban használt függvény a SZUM, ami összeadja az
+argumentumlistájában lévő számokat. A SZUM függvény a
+következő argumentummal =SZUM(A1:A4;C2) egyenértékű az
 $=A1+A2+A3+A4+C2$ képlettel. Ezen az egyszerű példán is
 láthatjuk, hogy a függvények használata megkönnyíti a
 számításokat.
@@ -35,7 +35,7 @@ a \textbf{Függvénytündér}, a második az \textbf{Összeg}
 
 \begin{figure}[!h]
 \begin{center}
-\includegraphics[width=7.751cm]{oocalcv1-img32.png}
+\includegraphics[width=7.751cm]{oocalcv2-img32.png}
 \caption{Függvénytündér}\label{Függvénytündér}
 \end{center}
 \end{figure}
@@ -50,61 +50,64 @@ használunk.
 
 \begin{figure}[h]
 \begin{center}
-\includegraphics[width=5.772cm]{oocalcv1-img33.png}
+\includegraphics[width=5.772cm]{oocalcv2-img33.png}
 \caption{Függvény kiválasztása}\label{FüggvényKiválasztás}
 \end{center}
 \end{figure}
 
 \Aref{FüggvényKiválasztás} ábrán látható, hogy az eszköztár ikonjai is
-megváltoztak: megjelent a \textbf{Mégsem} és az
+megváltoztak: megjelent a \textbf{Mégse} és az
 \textbf{Elfogadás} parancs. Ezekkel, egér segítségével is
 nyugtázhatjuk a kiválasztott függvényeket és argumentumokat.
 
 \section{Egyszerűbb statisztikai függvények használata}
-(SUM, MIN, MAX. AVERAGE, COUNT, COUNTA, SMALL, LARGE)
+(SZUM, MIN, MAX, ÁTLAG, DARAB, DARAB2, KICSI, NAGY)
 
-A Calc program minden nyelvi változatában, így a magyar
-nyelvűben is, angol függvénynevekkel találkozunk. Ez az angol
+A Calc program magyar nyelvű változatában általában magyar
+függvénynevekkel találkozunk.\footnote{A OpenOffice.org 3.2.1-es 
+verziótól kezdve} Ezek a magyar függvénynevek megegyeznek a magyar
+Excelben lévőkkel. Csak azok a függvénynevek 
+nincsenek lefordítva, amelyek nem léteznek a magyar Excelben, 
+vagy abban nincsenek lefordítva. Ezeknek az angolul maradt 
+függvényeknek a használata az angol
 nyelvet nem ismerők számára sem jelenthet gondot, hiszen a
-függvény magyarázata, a súgó példái magyar nyelvűek. 
+függvények magyarázata és a súgó példái magyar nyelvűek. 
 
-Ismerve egy függvény magyar nevét, a Calc súgójából
-megtudhatjuk az angol megfelelőjét. Ehhez válasszuk a Súgó
-ablakában a \textbf{Tárgymutató-}t, a \textbf{Keresett
-kifejezés-}hez pedig írjuk a függvény magyar nevét
+A Calc súgója megkönnyíti azok dolgát, aki csak az angol függvényneveket
+ismerik. A magyar megfelelő kikereséséhez válasszuk a Súgó
+ablakában a \textbf{Tárgymutató}t, a \textbf{Keresett
+kifejezés}hez pedig írjuk a függvény angol nevét
 (\ref{SúgóÁtlag} ábra).
 
 
 \begin{figure}[!h]
 \begin{center}
-\includegraphics[width=13.193cm]{oocalcv1-img34.png}
+\includegraphics[width=13.193cm]{oocalcv2-img34.png}
 \caption{OpenOffice.org Súgó --  Átlag}\label{SúgóÁtlag}
 \end{center}
 \end{figure}
 
 \Aref{AlapvetőFüggvények} táblázatban a négy leggyakrabban használt
-függvényt és azok Microsoft Excel megfelelőjét láthatjuk.
+függvényt láthatjuk.
 
 \begin{table}[!h]
 \begin{center}
 \caption{Alapvető függvények}\label{AlapvetőFüggvények}
 \begin{tabular}{|m{2.5cm}|m{8cm}|m{3cm}|}
 \hline
- & & \multicolumn{1}{c|}{\textbf{Megfelelője a}} \\
 \multicolumn{1}{|c|}{\textbf{A függvény}}&
 \multicolumn{1}{c|}{\textbf{Funkciója}}&
-\multicolumn{1}{c|}{\textbf{magyar}} \\
+\multicolumn{1}{c|}{\textbf{A függvény}} \\
 \multicolumn{1}{|c|}{\textbf{neve}} & &
-\multicolumn{1}{c|}{\textbf{Microsoft}} \\
- & & \multicolumn{1}{c|}{\textbf{Excelben}} \\
+\multicolumn{1}{c|}{\textbf{angol neve}} \\
 \hline
-SUM & Összeadja a cellatartományban lévő számokat. & SZUM \\
+SZUM & Összeadja a cellatartományban lévő számokat. & SUM \\
 \hline
 MIN & Az argumentumlista legkisebb értékét adja eredményül. & MIN \\
 \hline
 MAX & Az argumentumlista legnagyobb értékét adja eredményül. & MAX \\   
 \hline
-AVERAGE & Az argumentumok átlagát adja eredményül. & ÁTLAG \\
+ÁTLAG & Az argumentumok átlagát adja eredményül. & AVERAGE \\
 \hline
 \end{tabular}
 \end{center}
@@ -120,7 +123,7 @@ készítsük el a következő feladatot.
 Másoljuk egy üres munkafüzetbe a \textbf{ZH 02} munkalapot. A
 munkalapon töröljük a képlettel kiszámított cellák
 tartalmát. Számítsuk ki az összpontszámokat a G oszlopban a
-SUM függvénnyel. A 8. sorban függvény segítségével
+SZUM függvénnyel. A 8. sorban függvény segítségével
 jelenítsük meg a feladatok és az összpontszámok átlagát.
  Határozzuk meg a legnagyobb és a legkisebb összpontszámot,
 valamint azt, hogy a legtöbb  pontszámot elért tanulónak
@@ -137,7 +140,7 @@ munkalapot tartalmazza (\ref{7-feladatMunkalap} ábra).
 
 \begin{figure}[!h]
 \begin{center}
-\includegraphics[width=11.235cm]{oocalcv1-img35.png}
+\includegraphics[width=11.235cm]{oocalcv2-img35.png}
 \caption{7. feladat --  Munkafüzet beszúrása}\label{7-feladatMunkalap}
 \end{center}
 \end{figure}
@@ -150,16 +153,16 @@ töröljük a tartalmát.
 
 \begin{figure}[!h]
 \begin{center}
-\includegraphics[width=11.288cm]{oocalcv1-img36.png}
+\includegraphics[width=11.288cm]{oocalcv2-img36.png}
 \caption{7. feladat}\label{7-feladat}
 \end{center}
 \end{figure}
 
 Tegyük aktívvá a G4 cellát és kattintsunk a \textbf{Képlet}
 eszköztár \textbf{Összeg} ikonjára. A cellában megjelenik a
-SUM függvény és a megfelelő argumentumok is. A Calc az
+SZUM függvény és a megfelelő argumentumok is. A Calc az
 aktív cellától balra egy számsort talált és azt beírta a
-SUM függvénybe argumentumként. Ez nagyon hasznos funkció,
+SZUM függvénybe argumentumként. Ez nagyon hasznos funkció,
 hiszen gyakran fordul elő, hogy egy sor végén, vagy egy oszlop
 alján kell annak összegét kiszámolni. A kék színű keret
  mutatja az automatikusan meghatározott tartományt (\ref{7-feladat} ábra).
@@ -173,27 +176,27 @@ szót és a B8 cellában válasszuk a függvénytündért
 
 \begin{figure}[!h]
 \begin{center}
-\includegraphics[width=13.999cm]{oocalcv1-img37.png}
+\includegraphics[width=13.999cm]{oocalcv2-img37.png}
 \caption{7. feladat --  függvénytündér}\label{7-feladatFüggvény}
 \end{center}
 \end{figure}
 
 \begin{figure}[!h]
 \begin{center}
-\includegraphics[width=15.999cm]{oocalcv1-img38.png}
+\includegraphics[width=15.999cm]{oocalcv2-img38.png}
 \caption{7. feladat }\label{7-feladatArgumentum}
 \end{center}
 \end{figure}
 
-Az ablakban, kategóriákba rendezetten találjuk a Calc összes
+Az ablakban kategóriákba rendezetten találjuk a Calc összes
 függvényét. Egy függvényt kiválasztva az ablak jobb
 oldalán annak a magyarázatát olvashatjuk. A \textbf{Statisztikai}
-kategóriából válasszuk az AVERAGE függvényt. A
+kategóriából válasszuk az ÁTLAG függvényt. A
 \textbf{Tovább} gombra kattintva a párbeszédablak jobb oldalán
 megjelennek az argumentumbeviteli mezők (\ref{7-feladatArgumentum} ábra).
 Jelöljük ki a B4:B7 tartományt és a cellahivatkozás megjelenik az első
 beviteli mezőben. Természetesen megadhatunk szám- és egyéb
-értékeket, illetve hivatkozásokat a párbeszédablak megfelelő részeibe.  
+értékeket, illetve hivatkozásokat a párbeszédablak megfelelő részeiben.  
 
 A \textbf{Zsugorítás} ikon lecsökkenti a párbeszédablakot a
 beviteli mező méretére. Így könnyebb a szükséges
@@ -220,7 +223,7 @@ a második függvényt (\ref{7-feladatMásodik} ábra).
 
 \begin{figure}[!h]
 \begin{center}
-\includegraphics[width=15.999cm]{oocalcv1-img39.png}
+\includegraphics[width=15.999cm]{oocalcv2-img39.png}
 \caption{ 7. feladat}\label{7-feladatMásodik}
 \end{center}
 \end{figure}
@@ -238,7 +241,7 @@ felsorolt statisztikai függvényeket fogjuk használni.
 
 \begin{figure}[!h]
 \begin{center}
-\includegraphics[width=14.936cm]{oocalcv1-img40.png}
+\includegraphics[width=14.936cm]{oocalcv2-img40.png}
 \caption{7. feladat}\label{7-feladatMegoldás}
 \end{center}
 \end{figure}
@@ -248,28 +251,26 @@ felsorolt statisztikai függvényeket fogjuk használni.
 \caption{Statisztikai függvények}\label{StatisztikaiFüggvények}
 \begin{tabular}{|m{2.5cm}|m{8cm}|m{3cm}|}
 \hline
- & & \multicolumn{1}{c|}{\textbf{Megfelelője a}} \\
 \multicolumn{1}{|c|}{\textbf{A függvény}}&
 \multicolumn{1}{c|}{\textbf{Funkciója}}&
-\multicolumn{1}{c|}{\textbf{magyar}} \\
+\multicolumn{1}{c|}{\textbf{A függvény}} \\
 \multicolumn{1}{|c|}{\textbf{neve}} & &
-\multicolumn{1}{c|}{\textbf{Microsoft}} \\
- & & \multicolumn{1}{c|}{\textbf{Excelben}} \\
+\multicolumn{1}{c|}{\textbf{angol neve}} \\
 \hline
-COUNT &
+DARAB &
 Megszámolja, hány szám van a paraméterlistában. A szöveges
 bejegyzéseket kihagyja. &
-DARAB\\ \hline
-COUNTA &
+COUNT\\ \hline
+DARAB2 &
 Megszámolja, hány érték van a paraméterlistában. A
 szöveges elemek is számítanak. &
-DARAB2\\ \hline
-SMALL &
-Kiszámítja egy adathalmaz k-adik legkisebb értékét. &
-KICSI\\ \hline
-LARGE &
-Kiszámítja egy adathalmaz k-adik legnagyobb értékét. &
-NAGY\\ \hline
+COUNTA\\ \hline
+KICSI &
+Kiszámítja egy adathalmaz $k$-adik legkisebb értékét. &
+SMALL\\ \hline
+NAGY &
+Kiszámítja egy adathalmaz $k$-adik legnagyobb értékét. &
+LARGE\\ \hline
 \end{tabular}
 \end{center}
 \end{table}
@@ -285,17 +286,17 @@ számítsuk ki.}
 
 \begin{figure}[!h]
 \begin{center}
-\includegraphics[width=14.125cm]{oocalcv1-img41.png}
+\includegraphics[width=14.125cm]{oocalcv2-img41.png}
 \caption{8. feladat}\label{8-feladat}
 \end{center}
 \end{figure}
 
-A csoportlétszámot a COUNTA függvénnyel, a résztvevők
-számát pedig a COUNT-al számíthatjuk ki Az argumentumlista
-lehet ugyanaz (D4:D12), hiszen a COUNT csak a számokat tartalmazó
+A csoportlétszámot a DARAB2 függvénnyel, a résztvevők
+számát pedig a DARAB-bal számíthatjuk ki. Az argumentumlista
+lehet ugyanaz (D4:D12), hiszen a DARAB csak a számokat tartalmazó
 cellák darabszámát adja meg.
 
-A SMALL függvénnyel meghatározhatjuk egy cellatartomány k-adik
+A KICSI függvénnyel meghatározhatjuk egy cellatartomány $k$-adik
 legkisebb értékét. Két kötelező paramétere van: az
 elsővel a tartományt adjuk meg, a másodikkal meghatározzuk,
 hogy hányadik legkisebb elemre van szükségünk. Figyeljük meg
@@ -305,6 +306,6 @@ hogy hányadik legkisebb elemre van szükségünk. Figyeljük meg
 cellahivatkozást használunk, hogy minden másolt függvény
 ugyanarra  a tartományra hivatkozzon.
 
-A G13:G14 tartományt hasonlóan számítjuk ki, csak itt a LARGE
+A G13:G14 tartományt hasonlóan számítjuk ki, csak itt a NAGY
 függvényt alkalmazva.
 

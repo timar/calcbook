@@ -7,22 +7,27 @@ Az \textbf{ABS} függvény egy szám abszolút értékét
 számítja ki. Tehát negatív argumentum esetén a függvény
 eredménye pozitív. Például: ABS(-7)=7.
 
-A \textbf{FACT} függvény kiszámítja egy szám
+A \textbf{FAKT} függvény kiszámítja egy szám
 faktoriálisát. Definíció szerint 4!=1*2*3*4.
 
 Az \textbf{INT} függvény a legközelebbi egészre kerekít le egy
 számot. A negatív számok lefelé kerekítődnek a
 legközelebbi egészre. Például: INT(5,6)=5 és  INT(-5,6)=-6.
 
-Az \textbf{EVEN} függvény pozitív szám legközelebbi páros
+A \textbf{PÁROS} függvény pozitív szám legközelebbi páros
 egészre felkerekített értékét, illetve egy negatív szám
 legközelebbi páros egészre lekerekített értékét adja
-eredményül. Például: EVEN(4,6)=6 és  EVEN(-4,6) eredménye
+eredményül. Például: PÁROS(4,6)=6 és  PÁROS(-4,6) eredménye
 -6.
 
-Az \textbf{EXP} függvény. Az e-t a megadott hatványra emeli. Az e
-állandó értéke megközelítőleg 2,71828. Az EXP(1)
-eredménye maga az e szám.
+A \textbf{PÁRATLAN} függvény pozitív szám legközelebbi páratlan 
+egészre felkerekített értékét, illetve egy negatív szám 
+legközelebbi páratlan egészre lekerekített értékét adja 
+eredményül. Például: PÁRATLAN(4,6)=5 és PÁRATLAN(-4,6) eredménye -5.
+
+A \textbf{KITEVŐ} függvény. Az $e$-t a megadott hatványra emeli. Az $e$
+állandó értéke megközelítőleg 2,71828. A KITEVŐ(1)
+eredménye maga az $e$ szám.
 
 A \textbf{GCD} függvény kiszámítja két vagy több egész
 szám legnagyobb közös osztóját. A legnagyobb közös
@@ -41,30 +46,30 @@ páros egész, HAMIS értéket, ha páratlan.
 Az \textbf{ISODD} függvény IGAZ értéket ad vissza, ha a szám
 páratlan, HAMIS értéket, ha a szám páros.
 
-A \textbf{POWER} függvény hatványoz egy számot. Például a
-POWER(12;2) eredménye egyenlő 12\^{}2, tehát 144.
+A \textbf{HATVÁNY} függvény hatványoz egy számot. Például a
+HATVÁNY(12;2) eredménye egyenlő 12\^{}2, tehát 144.
 
-A \textbf{PRODUCT} függvény összeszorozza az argumentumban
+A \textbf{SZORZAT} függvény összeszorozza az argumentumban
 megadott számokat, eredményül a szorzatot adja.
 
-A \textbf{MOD} függvény a maradékot adja eredményül egy
+A \textbf{MARADÉK} függvény a maradékot adja eredményül egy
 egész szám másik egész számmal való osztása után.
-Például MOD(18;7) eredménye 4, mert a 18/7 osztás utáni
+Például MARADÉK(18;7) eredménye 4, mert a 18/7 osztás utáni
 maradék 4.
 
-A \textbf{ROUND} függvény egy szám meghatározott számú
+A \textbf{KEREK} függvény egy szám meghatározott számú
 tizedesjegyre kerekített értékét adja eredményül.
-Például ROUND(4,155;2) eredménye 4,16 lesz. Fontos tudni, hogy a
+Például KEREK(4,155;2) eredménye 4,16 lesz. Fontos tudni, hogy a
 cellaformátum módosításával is elérhetjük ugyanezt az
 eredményt, de a cella valódi tartalma nem változik. Amikor
 hivatkozunk rá, akkor az eredeti tartalmával fog számolni a Calc.
 
-A \textbf{SQRT} függvény egy szám négyzetgyökét számítja
+A \textbf{GYÖK} függvény egy szám négyzetgyökét számítja
 ki.
 
-A \textbf{TRUNC} függvény levágja a szám tizedesjegyeit.
-Például TRUNC(4,155;2) eredménye 4,15. A második argumentum nem
-kötelező, elhagyva minden tizedesjegyet eldob: TRUNC(4,155) = 4.
+A \textbf{CSONK} függvény levágja a szám tizedesjegyeit.
+Például CSONK(4,155;2) eredménye 4,15. A második argumentum nem
+kötelező, elhagyva minden tizedesjegyet eldob: CSONK(4,155) = 4.
 
 
 \section{14. feladat}
@@ -78,10 +83,10 @@ ugyanebben a cellában jelenjen meg az osztóinak a száma.}
 Az A1 cella csak az 1, 2, {\dots}, 1000 tartományból fogadjon
 értékeket.}
 
-A prím számok csak eggyel és önmagukkal
+A prímszámok csak eggyel és önmagukkal
 oszthatók maradék nélkül. A feladat tehát az, hogy
 megállapítsuk egy számról, két osztója van. A definíció
-szerint az 1-et nem soroljuk a prím számok közé.
+szerint az 1-et nem soroljuk a prímszámok közé.
 
 A calc03 munkafüzet második munkalapját nevezzük át
 ,,prím''-re. Írjunk egy
@@ -93,69 +98,69 @@ hányadosát (\ref{14-feladat} ábra).
 
 \begin{figure}[!h]
 \begin{center}
-\includegraphics[width=7.203cm]{oocalcv1-img77.png}
+\includegraphics[width=7.203cm]{oocalcv2-img77.png}
 \caption{14. feladat}\label{14-feladat}
 \end{center}
 \end{figure}
 
 A C oszlopban mind az 1000 értéket kiszámíthatjuk, ha kettőt
 kattintunk a cella jobb alsó részében megjelenő
-célkereszttel. Ilyenkor a Calc másolja a képletet míg a B
+célkereszttel. Ilyenkor a Calc addig másolja a képletet, amíg a B
 oszlopban kitöltött cellákat talál.
 
 Kaptunk egy számoszlopot, amely egész számokból és tizedes
 törtekből áll. Az egész számok darabszáma megadja az
 osztók számát. Ahhoz, hogy ezt meghatározzuk, a D oszlopban
-számítsuk ki a C oszlop értékeinek egész részét a TRUNC
-függvényt használva. Az E oszlopban pedig az IF függvényt
+számítsuk ki a C oszlop értékeinek egész részét a CSONK
+függvényt használva. Az E oszlopban pedig a HA függvényt
 felhasználva jelenítsünk meg 1-et, ha a tőle balra lévő
-két cella tartalma egyenlő, ellenkező esetben pedig nullát.
+két cella tartalma egyenlő, ellenkező esetben pedig 0-t.
 (\ref{14-feladatIF} ábra).
 
 \begin{figure}[!h]
 \begin{center}
-\includegraphics[width=9.338cm]{oocalcv1-img78.png}
-\caption{14. feladat -- IF}\label{14-feladatIF}
+\includegraphics[width=9.338cm]{oocalcv2-img78.png}
+\caption{14. feladat -- HA}\label{14-feladatIF}
 \end{center}
 \end{figure}
 
 Az E oszlop összege megadja az A1-be írt szám osztóinak a
-számát. Az F1 cellában a SUM függvénnyel számítsuk ezt
-ki. Az IF függvénnyel jelenítsük meg a PRÍM szöveget, ha az
+számát. Az F1 cellában a SZUM függvénnyel számítsuk ezt
+ki. A HA függvénnyel jelenítsük meg a PRÍM szöveget, ha az
 osztók száma kettő (\ref{14-feladatPrím} ábra).
 
 \begin{figure}[!h]
 \begin{center}
-\includegraphics[width=9.158cm]{oocalcv1-img79.png}
+\includegraphics[width=9.158cm]{oocalcv2-img79.png}
 \caption{14. feladat -- PRÍM}\label{14-feladatPrím}
 \end{center}
 \end{figure}
 
 Az A3 cellában megjeleníthetjük az ,,osztója
 van'' szöveget is, abban az esetben, ha nem prím
-számot írunk az A1 cellába. Prím szám esetén a cella üres
+számot írunk az A1 cellába. Prímszám esetén a cella üres
 marad (\ref{14-feladatOsztó} ábra).
 
 \begin{figure}[!h]
 \begin{center}
-\includegraphics[width=9.211cm]{oocalcv1-img80.png}
+\includegraphics[width=9.211cm]{oocalcv2-img80.png}
 \caption{14. feladat -- Van osztója}\label{14-feladatOsztó}
 \end{center}
 \end{figure}
 
-A MOD és a COUNTIF függvények segítségével egyszerűbben
+A MARADÉK és a DARABTELI függvények segítségével egyszerűbben
 is megoldható a feladat. Ezt  végezzük el önállóan!
 
 \begin{figure}[!h]
 \begin{center}
-\includegraphics[width=11.444cm]{oocalcv1-img81.png}
+\includegraphics[width=11.444cm]{oocalcv2-img81.png}
 \caption{14. feladat -- Érvényesség, feltételek}\label{14-feladatFeltétel}
 \end{center}
 \end{figure}
 
 \begin{figure}[!h ]
 \begin{center}
-\includegraphics[width=11.47cm]{oocalcv1-img82.png}
+\includegraphics[width=11.47cm]{oocalcv2-img82.png}
 \caption{14. feladat -- Érvényesség, figyelmeztetés}\label{14-feladatFigy}
 \end{center}
 \end{figure}
@@ -167,7 +172,7 @@ megadott tartományból írhassunk be számot. Ehhez válasszuk az
 Állítsuk be \aref{14-feladatFeltétel} ábrán látható értékeket.
 
 Kapcsoljuk be a hibaüzenet megjelenítését és a
-\textbf{Művelet}-ek közül válasszuk a
+\textbf{Művelet}ek közül válasszuk a
 \textbf{Leállítás}t (\ref{14-feladatFigy} ábra).  
 
 A \textbf{Hibaüzenet} szövegét megadva az fog megjelenni nem
@@ -175,7 +180,7 @@ megfelelő tartalom beírása esetén (\ref{14-feladatHiba} ábra).
 
 \begin{figure}[!h]
 \begin{center}
-\includegraphics[width=9.238cm]{oocalcv1-img83.png}
+\includegraphics[width=9.238cm]{oocalcv2-img83.png}
 \caption{14.  feladat -- Hibaüzenet}\label{14-feladatHiba}
 \end{center}
 \end{figure}
@@ -202,11 +207,11 @@ egyszerűsíthető'' szöveg (\ref{15-feladat} ábra),
 valamint D5 cellában megjelenik a GCD függvény eredménye is.
 
 A D5 tartalma:
-{\sffamily\bfseries{=IF(GCD(A2;A3)<>1;GCD(A2;A3);"")}}.
+{\sffamily\bfseries{=HA(GCD(A2;A3)<>1;GCD(A2;A3);"")}}.
 
 \begin{figure}[!h]
 \begin{center}
-\includegraphics[width=13.873cm]{oocalcv1-img84.png}
+\includegraphics[width=13.873cm]{oocalcv2-img84.png}
 \caption{15. feladat}\label{15-feladat}
 \end{center}
 \end{figure}
@@ -215,13 +220,13 @@ Amikor az egyszerűsített tört számlálója nagyobb mint a
 nevezője, a D1 cella az ,,Áltört'' szöveget mutatja. Az
 ,,egész'' szöveg jelenik meg, ha a nevező értéke 1, valódi
 tört esetén pedig üres marad.  \Aref{15-feladatIFek} ábrán
-látjuk, hogy ezt két egymásba ágyazott IF
+látjuk, hogy ezt két egymásba ágyazott HA
 függvénnyel egyszerűen megoldhatjuk.
 
 \begin{figure}[!h]
 \begin{center}
-\includegraphics[width=10.404cm]{oocalcv1-img85.png}
-\caption{15. feladat -- Egymásba ágyazott IF-ek}\label{15-feladatIFek}
+\includegraphics[width=10.404cm]{oocalcv2-img85.png}
+\caption{15. feladat -- Egymásba ágyazott HA függvények}\label{15-feladatIFek}
 \end{center}
 \end{figure}
 
@@ -230,7 +235,7 @@ sem jelenik meg (\ref{15-feladatValódi} ábra).
 
 \begin{figure}[!h]
 \begin{center}
-\includegraphics[width=10.402cm]{oocalcv1-img86.png}
+\includegraphics[width=10.402cm]{oocalcv2-img86.png}
 \caption{15. feladat -- Valódi tört}\label{15-feladatValódi}
 \end{center}
 \end{figure}
@@ -239,15 +244,15 @@ Az E2 cella tartalma csak akkor számítódik ki, ha a D2
 egyenlőségjelet tartalmaz.
 
 Az E2 tartalma:
-{\sffamily\bfseries{=IF(D2="=";TRUNC(C2/C3);"")}}.
+{\sffamily\bfseries{=HA(D2="=";CSONK(C2/C3);"")}}.
 
 Az F2 és az F3 pedig csak áltört esetén:
 
 Az F2 cella tartalma:
-{\sffamily\bfseries{=IF(D1="Áltört";C2-E2*F3;"")}}.
+{\sffamily\bfseries{=HA(D1="Áltört";C2-E2*F3;"")}}.
 
 Az F3 cella tartalma:
-{\sffamily\bfseries{=IF(D1="Áltört";C3;"")}}.
+{\sffamily\bfseries{=HA(D1="Áltört";C3;"")}}.
 
 
 \section{Logaritmusfüggvények}
@@ -277,19 +282,19 @@ első két értéket, ezeket kijelölve és lefelé másolva
 
 \begin{figure}[!h]
 \begin{center}
-\includegraphics[width=6.56cm]{oocalcv1-img87.png}
+\includegraphics[width=6.56cm]{oocalcv2-img87.png}
 \caption{16. feladat}\label{16-feladat}
 \end{center}
 \end{figure}
 
 \begin{figure}[!h]
 \begin{center}
-\includegraphics[width=14.739cm]{oocalcv1-img88.png}
+\includegraphics[width=14.739cm]{oocalcv2-img88.png}
 \caption{16. feladat --  grafikon}\label{16-feladatGrafikon}
 \end{center}
 \end{figure}
 
-A B1, C1, D1 és E1 cellákba írjuk a függvények neveit és
+A B1, C1, D1 és E1 cellákba írjuk a függvények neveit, és
 számítsuk ki az értékeket. A diagramtündér
 segítségével könnyen elkészíthetjük a diagramot,
  előzőleg kijelölve az A2:E76 tartományt (\ref{16-feladatGrafikon} ábra).
@@ -307,22 +312,22 @@ trigonometrikus, valamint azokkal kapcsolatos függvényeket
 \begin{tabular}{|m{2.5cm}|m{8cm}|}
 \hline
 SIN &
- kiszámítja egy adott szög (radiánban) szinuszát.\\ \hline
+ Kiszámítja egy radiánban adott szög szinuszát.\\ \hline
 COS &
- kiszámítja egy adott szög (radiánban) koszinuszát.\\ \hline
+ Kiszámítja egy radiánban adott szög koszinuszát.\\ \hline
 SINH &
- kiszámítja egy szám szinusz hiperbolikuszát.\\ \hline
+ Kiszámítja egy szám szinusz hiperbolikuszát.\\ \hline
 COSH &
- kiszámítja egy szám koszinusz hiperbolikuszát.\\ \hline
+ Kiszámítja egy szám koszinusz hiperbolikuszát.\\ \hline
 TAN &
- kiszámítja egy adott szög (radiánban) tangensét.\\ \hline
+ Kiszámítja egy radiánban adott szög tangensét.\\ \hline
 TANH &
- kiszámítja egy szám tangens hiperbolikuszát.\\ \hline
+ Kiszámítja egy szám tangens hiperbolikuszát.\\ \hline
 PI &
  A ${\pi}$ matematikai állandó 14 tizedesjegyre kerekített
 értékét adja vissza, ami 3,14159265358979.\\ \hline
-RADIANS &
-átszámítja a fok értéket radiánra.\\ \hline
+RADIÁN &
+Átszámítja a fok értéket radiánra.\\ \hline
 \end{tabular}
 \end{center}
 \end{table}
@@ -332,9 +337,9 @@ RADIANS &
 \section{17. feladat}
 
 {\itshape
-Ábrázoljuk Pont(XY) diagramon a  $y=a\ast \sin (c\ast
+Ábrázoljuk Pont(XY) diagramon az  $y=a\ast \sin (c\ast
 (b+\mathit{{\alpha}}))$ függvény grafikonját a [-360; +360]
-intervallumon.  Az a, b és c értékeket a E1, H1 és K1 cellák
+intervallumon.  Az a, b és c értékeket az E1, H1 és K1 cellák
 tartalmazzák.}
 
 Az A2:A74 tartományban hozzuk létre az ${\alpha}$ értékeket. A
@@ -345,7 +350,7 @@ radiánra (\ref{17-feladatGrafikon} ábra).
 
 \begin{figure}[!h]
 \begin{center}
-\includegraphics[width=15.529cm]{oocalcv1-img89.png}
+\includegraphics[width=15.529cm]{oocalcv2-img89.png}
 \caption{17. feladat --  grafikon}\label{17-feladatGrafikon}
 \end{center}
 \end{figure}
@@ -358,40 +363,39 @@ táblázatban találjuk meg.
 \caption{A fejezetben tárgyalt függvények}\label{8-fejezetFüggvények}
 \begin{tabular}{|m{2.5cm}|m{8cm}|m{3cm}|}
 \hline
- & & \multicolumn{1}{c|}{\textbf{Megfelelője a}} \\
 \multicolumn{1}{|c|}{\textbf{A függvény}}&
 \multicolumn{1}{c|}{\textbf{Funkciója}}&
-\multicolumn{1}{c|}{\textbf{magyar}} \\
+\multicolumn{1}{c|}{\textbf{A függvény}} \\
 \multicolumn{1}{|c|}{\textbf{neve}} & &
-\multicolumn{1}{c|}{\textbf{Microsoft}} \\
- & & \multicolumn{1}{c|}{\textbf{Excelben}} \\
+\multicolumn{1}{c|}{\textbf{angol neve}} \\
 \hline
 ABS & Egy szám abszolút értékét számítja ki. & ABS\\ \hline
-FACT & Egy szám faktoriálisát számítja ki. & FAKT\\ \hline
+FAKT & Egy szám faktoriálisát számítja ki. & FACT\\ \hline
 INT & A legközelebbi egészre kerekít  egy számot. & INT\\ \hline
-EVEN & A legközelebbi páros egészre kerekít. & PÁROS\\ \hline
-EXP & Az e-t a megadott hatványra emeli. & KITEV\H{O}\\ \hline
+PÁROS & A legközelebbi páros egészre kerekít. & EVEN\\ \hline
+PÁRATLAN & A legközelebbi páratlan egészre kerekít. & ODD\\ \hline
+KITEVŐ & Az $e$-t a megadott hatványra emeli. & EXP \\ \hline
 GCD & Legnagyobb közös osztó kiszámítása. & GCD\\ \hline
 LCM & Legkisebb közös többszörös kiszámítása. & LCM\\ \hline
 ISEVEN & Igaz értéket ad vissza, ha a szám páros. & ISEVEN\\ \hline
 ISODD & Igaz értéket ad vissza, ha a szám páratlan. & ISODD\\ \hline
-POWER & Hatványoz egy számot. & HATVÁNY\\ \hline
-PRODUCT & Összeszorozza az argumentumban megadott számokat. & SZORZAT\\ \hline
-MOD & Osztási maradékot jeleníti meg. & MOD\\ \hline
-ROUND & Meghatározott számú tizedesjegyre kerekít. & KEREK\\ \hline
-SQRT & Egy szám négyzetgyökét számítja ki. & GYÖK\\ \hline
-TRUNC & Levágja a szám tizedesjegyeit. & CSONK\\ \hline
+HATVÁNY & Hatványoz egy számot. & POWER\\ \hline
+SZORZAT & Összeszorozza az argumentumban megadott számokat. & PRODUCT\\ \hline
+MARADÉK & Osztási maradékot jeleníti meg. & MOD\\ \hline
+KEREK & Meghatározott számú tizedesjegyre kerekít. & ROUND\\ \hline
+GYÖK & Egy szám négyzetgyökét számítja ki. & SQRT\\ \hline
+CSONK & Levágja a szám tizedesjegyeit. & TRUNC\\ \hline
 LN & Természetes logaritmust számol. & LN\\ \hline
 LOG & Megadott alapú logaritmust számol. & LOG\\ \hline
 LOG10 & Tízes alapú logaritmust számol. & LOG10\\ \hline
 SIN & Egy adott szög szinuszát számítja ki. & SIN\\ \hline
 COS & Egy adott szög koszinuszát számítja ki. & COS\\ \hline
-SINH & Egy szám koszinusz hiperbolikuszát számítja ki. & SINH\\ \hline
+SINH & Egy szám szinusz hiperbolikuszát számítja ki. & SINH\\ \hline
 COSH & Egy szám koszinusz hiperbolikuszát számítja ki. & COSH\\ \hline
 TAN & Egy szög tangensét számítja ki. & TAN\\ \hline
 TANH & Egy szám tangens  hiperbolikuszát számítja ki. & TANH\\ \hline
-PI & A PI matematikai állandót adja meg. & PI\\ \hline
-RADIANS & Fokot, radiánná alakít. & RADIÁN\\ \hline
+PI & A ${\pi}$ matematikai állandót adja meg. & PI\\ \hline
+RADIÁN & Fokot radiánná alakít. & RADIANS\\ \hline
 \end{tabular}
 \end{center}
 \end{table}

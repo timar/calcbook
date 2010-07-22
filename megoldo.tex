@@ -1,10 +1,13 @@
 \chapter{A Megoldó használata}
 \thispagestyle{empty}
 
-A Calc \textbf{Eszközök} menüpontjában található a
-\textbf{Megoldó} (angolul Solver). Segítségével megkereshetjük egyenleteket, egyenlőtlenségeket kielégítő változók azon értékeit,
-amelyek a \textbf{célcellában} optimális eredményt adnak. Megadhatjuk, hogy a célcellában az érték maximális, minimális, vagy egy adott értéket megközelítő legyen. Meghatározhatunk több
- korlátozó feltételt is az egyes cellákra.
+A Calc \textbf{Eszközök} menüjében található a
+\textbf{Megoldó} (angolul Solver). Segítségével megkereshetjük egyenleteket, 
+egyenlőtlenségeket kielégítő változók azon értékeit,
+amelyek a \textbf{célcellában} optimális eredményt adnak. 
+Megadhatjuk, hogy a célcellában az érték maximális, minimális, 
+vagy egy adott értéket megközelítő legyen. Meghatározhatunk több
+korlátozó feltételt is az egyes cellákra.
 
 A következő feladat a Megoldó használatára mutat példát.
 
@@ -85,13 +88,14 @@ Hozzuk létre az alábbi táblázatot egy új munkalapon (\ref{35-feladat}
 
 \begin{figure}[!h]
 \begin{center}
-\includegraphics[width=15.999cm]{oocalcv1-img170.png}
+\includegraphics[width=15.999cm]{oocalcv2-img170.png}
 \caption{35. feladat}\label{35-feladat}
 \end{center}
 \end{figure}
 
-A C9:F9 tartományt \aref{35-feladat} ábrán látható tartalmú B9 cella
-\textsf{(=SUMPRODUCT(B3:B6;\$H3:\$H6))} másolásával hozzuk létre.
+Hozzuk létre a C9:F9 tartományt a B9 cella másolásával, amelybe a következő
+képlet kerüljön: \textsf{=SZORZATÖSSZEG(B3:B6;\$H3:\$H6)}. 
+
 Ebben a sorban tényleges
 költségrészletek fognak megjelenni a Megoldó által
 meghatározott darabszámok (H3:H6) és a részköltség
@@ -108,7 +112,7 @@ meghatározott darabszámok (H3:H6) és a részköltség
 B11 & \sffamily =E9\\ \hline
 B12 & \sffamily =H5\\ \hline
 D11 & \sffamily =D9*0,25\\ \hline
-B14 & \sffamily =SUMPRODUCT(H3:H6;I3:I6)\\ \hline
+B14 & \sffamily =SZORZATÖSSZEG(H3:H6;I3:I6)\\ \hline
 \end{tabular}
 \end{center}
 \end{table}
@@ -124,7 +128,7 @@ a \textbf{Beállítások} gombra kattintva érjük el.
 
 \begin{figure}[!h]
 \begin{center}
-\includegraphics[width=12.598cm]{oocalcv1-img171.png}
+\includegraphics[width=12.598cm]{oocalcv2-img171.png}
 \caption{35. feladat}\label{35-feladat2}
 \end{center}
 \end{figure}
@@ -137,7 +141,7 @@ feltételeknek megfelelve, a legnagyobb nyeresége lesz az üzemnek
 
 \begin{figure}[!h]
 \begin{center}
-\includegraphics[width=14.999cm]{oocalcv1-img172.png}
+\includegraphics[width=14.999cm]{oocalcv2-img172.png}
 \caption{35. feladat --  Megoldás}\label{35-feladatMegoldás}
 \end{center}
 \end{figure}

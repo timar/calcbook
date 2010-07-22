@@ -18,7 +18,7 @@ cellahivatkozást és beírjuk a nevet (\ref{CellákElnevezése} ábra).
 
 \begin{figure}[!h]
 \begin{center}
-\includegraphics[width=14.395cm]{oocalcv1-img104.png}
+\includegraphics[width=14.395cm]{oocalcv2-img104.png}
 \caption{Cellák elnevezése}\label{CellákElnevezése}
 \end{center}
 \end{figure}
@@ -39,7 +39,7 @@ törölhetjük is őket.
 
 \begin{figure}[!h]
 \begin{center}
-\includegraphics[width=11.562cm]{oocalcv1-img105.png}
+\includegraphics[width=11.562cm]{oocalcv2-img105.png}
 \caption{Nevek megadása}\label{NevekMegadása}
 \end{center}
 \end{figure}
@@ -54,25 +54,22 @@ függvény és cellák elnevezése segítségével.}
 A negyedik feladatban alkalmazott képlet
 {\sffamily\bfseries{(=\$C\$3*D3+\$C\$4*D4+\$C\$5*D5+\$C\$6*D6)}}
 szorzatok összege, amire találunk függvényt is a Calcban. Ez a
-SUMPRODUCT függvény.
+SZORZATÖSSZEG függvény.
 
-A \textbf{SUMPRODUCT} függvény
+A \textbf{SZORZATÖSSZEG} függvény
 összeszorozza az adott tömbök megfelelő elemeit, és
 eredményül a szorzatok összegét adja. Szintaxisa:
-SUMPRODUCT(tömb1; tömb2...tömb30).
-
-A magyar nyelvű Microsoft Excelben a függvény neve
-SZORZATÖSSZEG.
+SZORZATÖSSZEG(tömb1; tömb2...tömb30).
 
 Az előző képletet helyettesíthetjük a következő függvénnyel:\\
-{\sffamily\bfseries{=SUMPRODUCT(\$C\$3:\$C\$6;D3:D6)}}.
+{\sffamily\bfseries{=SZORZATÖSSZEG(\$C\$3:\$C\$6;D3:D6)}}.
 Mivel a C3:C6 tartománynak az ,,árak'' nevet adtuk:
-{\sffamily\bfseries{=SUMPRODUCT(árak;D3:D6)}} (\ref{23-feladatSUMPRODUCT} ábra).
+{\sffamily\bfseries{=SZORZATÖSSZEG(árak;D3:D6)}} (\ref{23-feladatSUMPRODUCT} ábra).
 
 \begin{figure}[!h]
 \begin{center}
-\includegraphics[width=15.212cm]{oocalcv1-img106.png}
-\caption{23. feladat --  SUMPRODUCT függvény}\label{23-feladatSUMPRODUCT}
+\includegraphics[width=15.212cm]{oocalcv2-img106.png}
+\caption{23. feladat --  SZORZATÖSSZEG függvény}\label{23-feladatSUMPRODUCT}
 \end{center}
 \end{figure}
 
@@ -80,16 +77,16 @@ Mivel a C3:C6 tartománynak az ,,árak'' nevet adtuk:
 \section{Rendezett listák }
 
 Cella másolásakor annak tartalmától függően a Calc
-másolást végez vagy sorozattal tölti fel a cellákat.
+vagy másolást végez, vagy sorozattal tölti fel a cellákat.
 Szöveges tartalom esetén általában megismétli a cella
-tartalmát. Ez alól két kivételt képez, ha a cellában a
+tartalmát. Ez alól két kivétel van. Az egyik, ha a cellában a
 szöveg után szám található. Ilyenkor másoláskor folytatja
 a számozást. \Aref{CellákMásolása} ábrán látható három oszlop ezzel a
 módszerrel lett létrehozva.
 
 \begin{figure}[!h]
 \begin{center}
-\includegraphics[width=8.312cm]{oocalcv1-img107.png}
+\includegraphics[width=8.312cm]{oocalcv2-img107.png}
 \caption{Cellák tartalmának másolása}\label{CellákMásolása}
 \end{center}
 \end{figure}
@@ -106,36 +103,35 @@ párbeszédablakban, az \textbf{OpenOffice.org Calc} --
 
 \begin{figure}[!h]
 \begin{center}
-\includegraphics[width=14.999cm]{oocalcv1-img108.png}
+\includegraphics[width=14.999cm]{oocalcv2-img108.png}
 \caption{Rendezett listák}\label{RendezettListák}
 \end{center}
 \end{figure}
 
 Lehetőség van saját listák létrehozására is. Ehhez csak
 be kell írni a listát egy tetszőleges tartományba és \aref{RendezettListák}
-ábrán látható \textbf{Másolás} majd az \textbf{Ok} gombra
+ábrán látható \textbf{Másolás} majd az \textbf{OK} gombra
 kattintani. 
 
 
 \section{Sorozatok létrehozása}
 
-A Calcban egyszerűen létrehozhatunk növekvő szántani és
-mértani számsorozatokat. Írjuk be egy cellába sorozat első
-tagját és jelöljük ki azt a tartományt ahová a számsort
+A Calcban egyszerűen létrehozhatunk növekvő számtani és
+mértani sorozatokat. Írjuk be egy cellába a sorozat első
+tagját, és jelöljük ki azt a tartományt, ahová a számsort
 létre akarjuk hozni. Válasszuk a \textbf{Szerkesztés --
 Kitöltés --  Sorozat} parancsot. 
 
 \begin{figure}[!h]
 \begin{center}
-\includegraphics[width=12.081cm]{oocalcv1-img109.png}
+\includegraphics[width=12.081cm]{oocalcv2-img109.png}
 \caption{Kitöltés sorozattal}\label{KitöltésSorozattal}
 \end{center}
 \end{figure}
 
 \Aref{KitöltésSorozattal} ábrán látható beállításokkal mértani sorozat
 jön létre, a sorozat hányadosa 2-vel egyenlő. Számtani
-sorozathoz a Lineáris kapcsolót kell választani, és a
-Növekmény részbe beírni a sorozat különbségét.
+sorozatnál a sorozat különbségét kell a Növekmény mezőbe írni.
 
 Dátumsorozatot is létrehozhatunk, a növekmény megadásán
 kívül ilyenkor időegységet is választhatunk.
@@ -168,12 +164,12 @@ kattintva megjelenik a lista (\ref{24-feladat} ábra).
 
 \begin{figure}[!h]
 \begin{center}
-\includegraphics[width=12.751cm]{oocalcv1-img110.png}
+\includegraphics[width=12.751cm]{oocalcv2-img110.png}
 \caption{24. feladat}\label{24-feladat}
 \end{center}
 \end{figure}
 
 Egérrel választhatunk a listából és a cella azt az értéket
-veszi fel. A B19:E19 tartományban a VLOOKUP függvény megkeresi az
+veszi fel. A B19:E19 tartományban az FKERES függvény megkeresi az
 adott kódhoz tartozó adatokat.
 

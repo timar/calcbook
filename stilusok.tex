@@ -6,12 +6,12 @@ Stílusok segítségével előre meghatározott formátumok
 megkönnyíti a munkafüzetekben és a munkalapokon egységes
 stílusjegyek kialakítását. Használatához a
 \textbf{Stílusok és formázás} ablakot kell megjeleníteni,
-amit \textbf{Formázás} eszköztár első kapcsolójával, a
-\textbf{Formázás} menüpont megegyező nevű parancsával,
+amit a \textbf{Formázás} eszköztár első kapcsolójával, a
+\textbf{Formátum} menüpont megegyező nevű parancsával,
 vagy az F11 funkcióbillentyűvel tehetünk meg. Az ablak első
 két ikonjával a stílusok két kategóriája között
 választhatunk. Ezek a Cellastílusok és Oldalstílusok. A
-cellastílusok cellák és cellatartományokra alkalmazhatók, az
+cellastílusok cellákra és cellatartományokra alkalmazhatók, az
 oldalstílusok pedig a munkafüzet nyomtatási beállításait
 tartalmazzák. Mindkét kategória alapértelmezett stílusokat
 tartalmaz, ezeket módosíthatjuk, de létrehozhatunk általunk
@@ -35,7 +35,7 @@ kikapcsolásához kattintsunk ismét az ikonjára.
 
 \begin{figure}[!h]
 \begin{center}
-\includegraphics[width=6.644cm]{oocalcv1-img157.png}
+\includegraphics[width=6.644cm]{oocalcv2-img157.png}
 \caption{Stílusok és formázás}\label{StílusokFormázás}
 \end{center}
 \end{figure}
@@ -47,7 +47,7 @@ gyorsmenüből a \textbf{Módosítás} parancsot válasszuk
 
 \begin{figure}[!h]
 \begin{center}
-\includegraphics[width=14.208cm]{oocalcv1-img158.png}
+\includegraphics[width=14.208cm]{oocalcv2-img158.png}
 \caption{Stílus módosítása}\label{StílusMódosítása}
 \end{center}
 \end{figure}
@@ -94,18 +94,18 @@ az Eredmény nevű stílust állítja be, ha a cella tartalma 4
 
 \begin{figure}[!h]
 \begin{center}
-\includegraphics[width=15.999cm]{oocalcv1-img159.png}
+\includegraphics[width=15.999cm]{oocalcv2-img159.png}
 \caption{Feltételes formázás}\label{FeltételesFormázás}
 \end{center}
 \end{figure}
 
 Formázási feltételként képletet is megadhatunk. Ehhez
-válasszuk \textbf{A cella értéke} helyett a \textbf{A képlet
+válasszuk \textbf{A cella értéke} helyett \textbf{A képlet
 }elemet, majd adjuk meg a képletet, melynek logikai IGAZ eredménye
 esetén a kiválasztott cellastílust alkalmazza a program. A
 képletben használhatunk abszolút, vegyes és relatív
 cellahivatkozást is, cella másolásánál az általános
-szabályok szerint módisítja ezeket a Calc.
+szabályok szerint módosítja ezeket a Calc.
 
 Egy cellán beállított feltételes formázást a
 \textbf{Formátumecset} vagy az \textbf{Irányított beillesztés}
@@ -133,11 +133,12 @@ használhatjuk a gyorsmenüt is.
 Következő lépésként vizsgáljuk meg az irányított beillesztés alkalmazását.
 Amennyiben szükségünk van egy véletlen, 0 és 100 közötti
 számokból álló számoszlopra, azt létrehozhatjuk az első
-cellába a \textbf{=TRUNC(100*RAND())} kifejezést
+cellába a \textbf{=CSONK(100*VÉL())} kifejezést
 írva és lefelé másolva (\ref{IrányítottBeillesztés} ábra).
 Ez a számoszlop minden
 cellaműveletkor újragenerálódik, az értékei
-megváltoznak. Az N2:N13 tartományt kijelölve, és az
+megváltoznak. Az N2:N13 tartományt kijelölve, azt menüből 
+vagy billentyűkombinációval másolva, és az
 irányított beillesztés ablakban a \textbf{Számok}
 rádiógombot bekapcsolva az O2:O13 tartományba csak a
 számértékek kerülnek át. Az eredeti N2:N13 tartományt
@@ -145,7 +146,7 @@ törölhetjük.
 
 \begin{figure}[!h]
 \begin{center}
-\includegraphics[width=15.999cm]{oocalcv1-img160.png}
+\includegraphics[width=15.999cm]{oocalcv2-img160.png}
 \caption{Irányított beillesztés}\label{IrányítottBeillesztés}
 \end{center}
 \end{figure}
@@ -162,7 +163,7 @@ formátumát (\ref{TartalomTörlése} ábra).
 
 \begin{figure}[!h]
 \begin{center}
-\includegraphics[width=8.414cm]{oocalcv1-img161.png}
+\includegraphics[width=8.414cm]{oocalcv2-img161.png}
 \caption{Tartalom törlése}\label{TartalomTörlése}
 \end{center}
 \end{figure}
@@ -179,7 +180,7 @@ formátummal és szürke háttérszínnel jelenjenek meg.}
 Első lépésként hozzunk létre egy stílust
 ,,lemarad'' néven a feladatban
 megadott formátumokkal. Az első tanuló nevének celláján
-válasszuk a feltételes formázást. Itt válasszuk a \textbf{A
+válasszuk a feltételes formázást. Itt válasszuk \textbf{A
 képlet} elemet. A képlet mezőt választva kattintsunk az I2
 cellára. A cellacím abszolút hivatkozásként jelenik meg, ezt
 változtassuk relatívra és írjuk be a feltételt
@@ -187,7 +188,7 @@ változtassuk relatívra és írjuk be a feltételt
 
 \begin{figure}[!h]
 \begin{center}
-\includegraphics[width=13.042cm]{oocalcv1-img162.png}
+\includegraphics[width=13.042cm]{oocalcv2-img162.png}
 \caption{34. feladat --  feltételes formázás}\label{34-feladatFeltételes}
 \end{center}
 \end{figure}
@@ -203,7 +204,7 @@ kapnak formátumot (\ref{34-feladatMegoldás} ábra).
 
 \begin{figure}[!h]
 \begin{center}
-\includegraphics[width=12.883cm]{oocalcv1-img163.png}
+\includegraphics[width=12.883cm]{oocalcv2-img163.png}
 \caption{34. feladat --  megoldás}\label{34-feladatMegoldás}
 \end{center}
 \end{figure}

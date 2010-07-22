@@ -1,13 +1,13 @@
 \chapter{Adattartományok a Calcban}
 \thispagestyle{empty}
 
-A Calc segítségével egyszerűbb adatbázis funkciókat is
+A Calc segítségével egyszerűbb adatbázis-funkciókat is
 megvalósíthatunk. Az adatokat kötött formátumú
 táblázatba kell beírnunk. Az ilyen táblázat oszlopai azonos
 típusú adatokat tartalmaznak, az első sorba pedig az oszlopok
 neveit kell beírni. A táblában az oszlopokat mezőknek, a
-sorokat rekordoknak nevezzük. Mezőneveknek az első sor
-adatit. A táblában lehetőleg ne legyenek üres sorok vagy
+sorokat rekordoknak, az első sor adatait pedig mezőneveknek nevezzük. 
+A táblában lehetőleg ne legyenek üres sorok vagy
 oszlopok. Ezeknek a kritériumoknak megfelelnek a 18. feladatban
 használt adatok. Másoljuk az A1:E17 tartományt az újonnan
 létrehozott calc05 munkafüzet második munkalapjára (\ref{Adattartományok}
@@ -15,7 +15,7 @@ létrehozott calc05 munkafüzet második munkalapjára (\ref{Adattartományok}
 
 \begin{figure}[!h]
 \begin{center}
-\includegraphics[width=13.679cm]{oocalcv1-img111.png}
+\includegraphics[width=13.679cm]{oocalcv2-img111.png}
 \caption{Adattartományok}\label{Adattartományok}
 \end{center}
 \end{figure}
@@ -32,15 +32,15 @@ cellatartományok tartalmát. A \textbf{Standard} eszköztár
 \textbf{Rendezés} \textbf{növekvő sorrendbe} és
 \textbf{Csökkenő} \textbf{sorrend} parancsait csak akkor
 használjuk, ha egy tartományt a mellette lévő
-tartományoktól függetlenül rendezni akarunk. Olyan kötött
-formátumú adattáblák rendezéséhez, mint amilyet 110.
+tartományoktól függetlenül akarunk rendezni. Olyan kötött
+formátumú adattáblák rendezéséhez, mint amilyet \aref{Adattartományok}
 ábrán is látunk, válasszuk a tábla egyik kitöltött
 celláját és az \textbf{Adatok} menüpont \textbf{Rendezés}
 parancsát (\ref{RendezésiFeltétel} ábra).
 
 \begin{figure}[!h]
 \begin{center}
-\includegraphics[width=15.999cm]{oocalcv1-img112.png}
+\includegraphics[width=15.999cm]{oocalcv2-img112.png}
 \caption{Rendezés -- rendezési feltétel}\label{RendezésiFeltétel}
 \end{center}
 \end{figure}
@@ -49,16 +49,16 @@ Látjuk, hogy a Calc kijelölte az adattartományt. A megjelenő
 párbeszédablakban kiválaszthatjuk azt a mezőt, amelyik
 szerint rendezni szeretnénk adatainkat. Ismétlődő adatok
 esetén lehet hasznos a másodlagos és a harmadlagos rendezés
-beállítása. Mindhárom rendezésnél a rendezés irányárt
+beállítása. Mindhárom rendezésnél a rendezés irányát
 is megadhatjuk.
 
 A \textbf{Beállítások} fület választva (\ref{RendezésBeállítások} ábra)
 megadhatjuk, hogy rendezésnél a kis- és nagybetűket
-megkülönböztesse a program.
+megkülönböztesse-e a program.
 
 \begin{figure}[!h]
 \begin{center}
-\includegraphics[width=12.864cm]{oocalcv1-img113.png}
+\includegraphics[width=12.864cm]{oocalcv2-img113.png}
 \caption{Rendezés --  Beállítások}\label{RendezésBeállítások}
 \end{center}
 \end{figure}
@@ -88,7 +88,7 @@ a szűrés eredménye, ahol a készlet értéke~8.
 
 \begin{figure}[!h]
 \begin{center}
-\includegraphics[width=13.524cm]{oocalcv1-img114.png}
+\includegraphics[width=13.524cm]{oocalcv2-img114.png}
 \caption{Automatikus szűrő használata}\label{AutomatikusSzűrő}
 \end{center}
 \end{figure}
@@ -109,7 +109,7 @@ meghatározhatunk bonyolultabb szűrési feltételeket (\ref{ÁltalánosSzűrő}
 
 \begin{figure}[!h]
 \begin{center}
-\includegraphics[width=13.743cm]{oocalcv1-img115.png}
+\includegraphics[width=13.743cm]{oocalcv2-img115.png}
 \caption{Általános szűrő}\label{ÁltalánosSzűrő}
 \end{center}
 \end{figure}
@@ -145,32 +145,29 @@ között (\ref{25-feladatÁltalános} ábra).
 
 \begin{figure}[!h]
 \begin{center}
-\includegraphics[width=13.452cm]{oocalcv1-img116.png}
+\includegraphics[width=13.452cm]{oocalcv2-img116.png}
 \caption{25. feladat --  Általános szűrő}\label{25-feladatÁltalános}
 \end{center}
 \end{figure}
 
 A szűrt rekordok értékeinek összegzésére nem
-használhatjuk a SUM függvényt, mert az tartalmazni fogja a
+használhatjuk a SZUM függvényt, mert az tartalmazni fogja a
 rejtett cellákban található értékeket is. A \textbf{Képlet}
 eszköztár \textbf{Összeg} ikonjára kattintva a
-\textbf{SUBTOTAL} függvény jelenik meg (\ref{25-feladatSUBTOTAL} ábra).
+\textbf{RÉSZÖSSZEG} függvény jelenik meg (\ref{25-feladatSUBTOTAL} ábra).
 
 \begin{figure}[!h]
 \begin{center}
-\includegraphics[width=13.868cm]{oocalcv1-img117.png}
-\caption{25. feladat --  SUBTOTAL függvény}\label{25-feladatSUBTOTAL}
+\includegraphics[width=13.868cm]{oocalcv2-img117.png}
+\caption{25. feladat --  RÉSZÖSSZEG függvény}\label{25-feladatSUBTOTAL}
 \end{center}
 \end{figure}
 
 Ez a függvény a szűrt eredményekkel végez
 különböző műveleteket, amit az első paraméterében
-megadott számmal határozunk meg. 9 a SUM függvénynek felel meg.
+megadott számmal határozunk meg. 9 a SZUM függvénynek felel meg.
 A függvényindexek listáját megtaláljuk a Calc
 súgójában.
-
-A SUBTOTAL függvénynek a magyar nyelvű Microsoft Excelben a
-RÉSZÖSSZEG nevű függvény felel meg.
 
 
 \section{Irányított szűrés}
@@ -182,7 +179,7 @@ végezhetünk szűrést az adattartományon.
 
 \begin{figure}[!h]
 \begin{center}
-\includegraphics[width=12.282cm]{oocalcv1-img118.png}
+\includegraphics[width=12.282cm]{oocalcv2-img118.png}
 \caption{Irányított szűrő}\label{IrányítottSzűrő}
 \end{center}
 \end{figure}
@@ -201,16 +198,16 @@ amelyik megnevezése T betűvel kezdődik, függetlenül a
 beszerzési ártól és darabszámtól.
 
 Válasszuk az eredeti adattartomány valamelyik celláját és
-\textbf{Adat} menüpont \textbf{Szűrő} --
+az \textbf{Adat} menüpont \textbf{Szűrő} --
 \textbf{Irányított szűrő} parancsát. A megjelenő
-ablakban adjuk meg szűrőfeltételnek az A22:E24 tartományt
+ablakban adjuk meg szűrőfeltételnek az A22:E24 tartományt,
 és kapcsoljuk be a Reguláris kifejezések kapcsolót, hiszen a
 B24 cellába ilyet írtunk. A megjelenő, a feltételeknek
 megfelelő szűrt tartományt \aref{SzűrésEredmények} ábra mutatja.
 
 \begin{figure}[!h]
 \begin{center}
-\includegraphics[width=12.778cm]{oocalcv1-img119.png}
+\includegraphics[width=12.778cm]{oocalcv2-img119.png}
 \caption{Szűrés eredmények}\label{SzűrésEredmények}
 \end{center}
 \end{figure}
@@ -218,5 +215,5 @@ megfelelő szűrt tartományt \aref{SzűrésEredmények} ábra mutatja.
 A szűrőfeltételek módosítása után azok automatikusan
 nem jutnak érvényre. A szűrés aktualizálásához
 ismételten ki kell adni az \textbf{Adat} menüpont
-\textbf{Szűrő -- Irányított} szűrő parancsát.
+\textbf{Szűrő -- Irányított szűrő} parancsát.
 

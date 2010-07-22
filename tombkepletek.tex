@@ -3,7 +3,7 @@
 
 \section{Tömbképletek létrehozása}
 
-A Calcban megoldatjuk, hogy egy képletet beírva az eredményül
+A Calcban megoldhatjuk, hogy egy képletet beírva az eredményül
 több cellának is értéket adjon. Az ilyen képletet
 tömbképletnek nevezzük. Tömbnek értékeket tartalmazó
 cellák kapcsolt tartományát nevezzük. A tömb sorokból és
@@ -28,7 +28,7 @@ A tömbök celláiba számokat írva a matematikából ismert
 mátrixokat kapunk. A mátrixokat nagybetűvel jelölik és
 elemeit szögletes zárójelek közé írják. Mátrixokat
 használnak lineáris egyenletek leírására és olyan adatok
-tárolására amelyek két paramétertől függnek.
+tárolására, amelyek két paramétertől függnek.
 
 
 \section{Mátrixok összeadása}
@@ -40,7 +40,7 @@ F2:H4 tartományé pedig \textbf{Btömb}.
 
 \begin{figure}[!h]
 \begin{center}
-\includegraphics[width=12.751cm]{oocalcv1-img130.png}
+\includegraphics[width=12.751cm]{oocalcv2-img130.png}
 \caption{Mátrixok összeadása -- Nevek megadása}\label{MátrixokÖsszeadásaNevek}
 \end{center}
 \end{figure}
@@ -50,7 +50,7 @@ eszköztárt bekapcsolva, azon a \textbf{Szimbolikus alakzatok
 Nyitó zárójel} és \textbf{Záró zárójel} objektumokat választva.
 
 Jelöljük ki a J2:L4 tartományt és írjuk be a következő
-kifelezést: {\sffamily\bfseries{=Atömb+Btömb}}.
+kifejezést: {\sffamily\bfseries{=Atömb+Btömb}}.
 
 A kifejezés beírása után ne az Enter billentyűt, hanem a
 Shift+Ctrl+Enter billentyűkombinációt üssük le. A
@@ -61,7 +61,7 @@ tartományból a következő tartalmat látjuk:
 
 \begin{figure}[!h]
 \begin{center}
-\includegraphics[width=10.031cm]{oocalcv1-img131.png}
+\includegraphics[width=10.031cm]{oocalcv2-img131.png}
 \caption{Mátrixok összeadása}\label{MátrixokÖsszeadása}
 \end{center}
 \end{figure}
@@ -82,7 +82,7 @@ be a képletet majd a Shift+Ctrl+Enter billentyűkombinációval
 
 \begin{figure}[!h]
 \begin{center}
-\includegraphics[width=7.077cm]{oocalcv1-img132.png}
+\includegraphics[width=7.077cm]{oocalcv2-img132.png}
 \caption{Mátrix szorzata skalárral}\label{MátrixSzorzataSkalárral}
 \end{center}
 \end{figure}
@@ -90,27 +90,27 @@ be a képletet majd a Shift+Ctrl+Enter billentyűkombinációval
 
 \section{Mátrixok szorzása}
 
-Két mátrixot csak akkor lehet összeszorozni, ha a baloldali
-mátrix oszlopainak száma megegyezik a jobboldali mátrix sorainak
+Két mátrixot csak akkor lehet összeszorozni, ha a bal oldali
+mátrix oszlopainak száma megegyezik a jobb oldali mátrix sorainak
 számával. A szorzat egy olyan mátrix lesz, amelyiknek annyi sora
-van mint a baloldalinak és annyi oszlopa mint a jobboldalinak. A
+van, mint a bal oldalinak, és annyi oszlopa, mint a jobb oldalinak. A
 mátrix elemeit az \textbf{Adattömb} kategóriában lévő
-\textbf{MMULT} tömbfüggvénnyel számíthatjuk ki.
+\textbf{MSZORZAT} tömbfüggvénnyel számíthatjuk ki.
 
 \Aref{MátrixokSzorzásaMMULT} ábrán a \textbf{C} és a \textbf{D}
 mátrixok dimenziói
-5x3 és 3x4, ami megfelel a feltételnek. A mátrixok ebben a
+5×3 és 3×4, ami megfelel a feltételnek. A mátrixok ebben a
 sorrendben összeszorozhatóak, más szóval konformábilisak. A
 függvénytündér használata előtt vagy jelöljük ki
 pontosan azt a tartományt, ahol az új mátrix sorai és oszlopai
 lesznek, vagy az aktív cella legyen a leendő mátrix első
-elemének a cellája. Hibás kijelölés esetén csak azt a
+elemének a cellája. Hibás kijelölés esetén csak azt a kijelölt
 tartományt tölti fel értékekkel a tömbfüggvény.
 
 \begin{figure}[!h]
 \begin{center}
-\includegraphics[width=13.999cm]{oocalcv1-img133.png}
-\caption{Mátrixok szorzása -- MMULT függvény}\label{MátrixokSzorzásaMMULT}
+\includegraphics[width=13.999cm]{oocalcv2-img133.png}
+\caption{Mátrixok szorzása -- MSZORZAT függvény}\label{MátrixokSzorzásaMMULT}
 \end{center}
 \end{figure}
 
@@ -119,7 +119,7 @@ használatakor. Az eredményt \aref{MátrixokSzorzásaEredmény} ábrán látjuk
 
 \begin{figure}[!h]
 \begin{center}
-\includegraphics[width=8.285cm]{oocalcv1-img134.png}
+\includegraphics[width=8.285cm]{oocalcv2-img134.png}
 \caption{Mátrixok szorzása -- eredmény}\label{MátrixokSzorzásaEredmény}
 \end{center}
 \end{figure}
@@ -138,7 +138,7 @@ több mint 200-ból.
 \section{30. feladat}
 
 {\itshape
-Határozzuk meg a B2:D4 tartományba írt 3x3-as tömb
+Határozzuk meg a B2:D4 tartományba írt 3×3-as tömb
 determinánsát képlet segítségével az F3 cellában, a
 G3-ban pedig az MDETERM függvénnyel. A tömb számértékeinek
 módosításával ellenőrizzük a determináns néhány
@@ -146,12 +146,12 @@ tulajdonságát:}
 
 {\itshape
 a) értékét megtartja, ha egyik sorának minden eleméhez
-hozzáadjuk egy másik sor megfelelő elemeinek egy bizonyos m
+hozzáadjuk egy másik sor megfelelő elemeinek egy bizonyos $m$
 számmal való szorzatát;}
 
 {\itshape
-b) értékét m-szeresére változtatja, ha egyik sorának elemeit
-m-mel szorozzuk;}
+b) értékét $m$-szeresére változtatja, ha egyik sorának elemeit
+$m$-mel szorozzuk;}
 
 {\itshape
 c) csak előjelét váltja, ha két sorát felcseréljük;}
@@ -167,7 +167,7 @@ A G3 tartalma: {\sffamily\bfseries{=MDETERM(B2:D4)}}.
 
 \begin{figure}[!h]
 \begin{center}
-\includegraphics[width=12.974cm]{oocalcv1-img135.png}
+\includegraphics[width=12.974cm]{oocalcv2-img135.png}
 \caption{30. feladat --  mátrix determinánsa --  MDETERM}\label{30-feladatMátrixMDETERM}
 \end{center}
 \end{figure}
@@ -177,19 +177,19 @@ A G3 tartalma: {\sffamily\bfseries{=MDETERM(B2:D4)}}.
 
 Egy mátrix inverzén olyan mátrixot értünk, amelynek szorzata a
 mátrixszal egységmátrixot ad. Az egységmátrix olyan mátrix,
-amelyik fő átlóján egyesek vannak minden más eleme pedig
+amelyik főátlóján egyesek vannak, minden más eleme pedig
 nulla. Az \textbf{A} mátrix inverzét \textbf{A\textsuperscript{{}-1}}
 szimbólummal jelöljük. Csak négyzetes mátrixoknak van inverzük.
 
-A \textbf{MINVERSE} tömbfüggvénnyel határozhatjuk meg az inverz
-mátrixot. Szintaxisa: MINVERSE(tömb). \Aref{MátrixInverse} ábrán a B2:D4
+Az \textbf{INVERZ.MÁTRIX} tömbfüggvénnyel határozhatjuk meg az inverz
+mátrixot. Szintaxisa: INVERZ.MÁTRIX(tömb). \Aref{MátrixInverse} ábrán a B2:D4
 tartományba írt mátrix inverzét a B6:D8 tartományba
 számítottuk ki a függvénnyel.
 
 \begin{figure}[!h]
 \begin{center}
-\includegraphics[width=8.047cm]{oocalcv1-img136.png}
-\caption{Mátrix inverze --  MINVERSE}\label{MátrixInverse}
+\includegraphics[width=8.047cm]{oocalcv2-img136.png}
+\caption{Mátrix inverze --  INVERZ.MÁTRIX}\label{MátrixInverse}
 \end{center}
 \end{figure}
 
@@ -199,16 +199,16 @@ egységmátrixot ad.
 
 
 \section{Transzponált mátrix}
-A \textbf{TRANSPOSE} tömbfüggvénnyel meghatározhatjuk egy
+A \textbf{TRANSZPONÁLÁS} tömbfüggvénnyel meghatározhatjuk egy
 mátrix transzponáltját, olyan mátrixot amiben a sorok és az
-oszlopok fel vannak cserélve. Szintaxisa: TRANSPONSE(tömb). 
-\Aref{TranszponáltMátrix} ábrán a G2:I3 tartományba az
+oszlopok fel vannak cserélve. Szintaxisa: TRANSZPONÁLÁS(tömb). 
+\Aref{TranszponáltMátrix} ábrán a G2:I3 tartományban az
 \textbf{A} tömb transzponáltját látjuk. 
 
 \begin{figure}[!h]
 \begin{center}
-\includegraphics[width=8.073cm]{oocalcv1-img137.png}
-\caption{Transzponált mátrix --  TRANSPOSE}\label{TranszponáltMátrix}
+\includegraphics[width=8.073cm]{oocalcv2-img137.png}
+\caption{Transzponált mátrix --  TRANSZPONÁLÁS}\label{TranszponáltMátrix}
 \end{center}
 \end{figure}
 
@@ -230,7 +230,7 @@ táblázatát (\ref{31-feladat} ábra).
 
 \begin{figure}[!h]
 \begin{center}
-\includegraphics[width=10.73cm]{oocalcv1-img138.png}
+\includegraphics[width=10.73cm]{oocalcv2-img138.png}
 \caption{31. feladat}\label{31-feladat}
 \end{center}
 \end{figure}
@@ -240,12 +240,12 @@ adattartománynak ahol a beszerzési ár nagyobb, mint 1~Ft de
 kisebb vagy egyenlő 1000~Ft-nál.
 
 Írjuk be a következő kifejezést az E21 cellába:\\
-{\sffamily\bfseries{=SUM(IF(D\$2:D\$17>C21;IF(D\$2:D\$17<=D21;1;0)))}}.
+{\sffamily\bfseries{=SZUM(HA(D\$2:D\$17>C21;HA(D\$2:D\$17<=D21;1;0)))}}.
 
 A képletet a Ctrl+Shift+Enter billentyűkombinációval
 nyugtázzuk, tehát tömbképletet hozzunk létre. A
 tömbképlet ebben az esetben megvizsgál minden cellát a D2:D17
-tartományból és az egymásba ágyazott IF függvényeknek
+tartományból és az egymásba ágyazott HA függvényeknek
 köszönhetően 1-nek tekinti azokat értékeket, amelyek
 megfelelnek a feltételeknek, és 0-nak ha nem. Ezeknek az összege
 megadja a kívánt rekordszámot.
@@ -257,14 +257,14 @@ cellatartalmakat. A feladat megoldását \aref{31-feladatMegoldás}
 
 \begin{figure}[!h]
 \begin{center}
-\includegraphics[width=11.834cm]{oocalcv1-img139.png}
+\includegraphics[width=11.834cm]{oocalcv2-img139.png}
 \caption{31. feladat -- megoldás}\label{31-feladatMegoldás}
 \end{center}
 \end{figure}
 
 Bár ezt a feladatot megoldhatjuk tömbképlet
-alkalmazása nélkül is, például COUNTIF függvénnyel  a
+alkalmazása nélkül is, például DARABTELI függvénnyel az
 \& operátort
-felhasználva\footnote{=COUNTIF(D\$2:D\$17;"<"\&D21)-COUNTIF(D\$2:D\$17;"<"\&C21)},
+felhasználva\footnote{=DARABTELI(D\$2:D\$17;"<"\&D21)-DARABTELI(D\$2:D\$17;"<"\&C21)},
 de a fent bemutatott megoldás is tanulságos.
 
