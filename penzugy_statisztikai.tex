@@ -1,0 +1,230 @@
+\chapter{Pénzügyi és statisztikai függvények}
+\thispagestyle{empty}
+
+\section{Pénzügyi függvények}
+
+Ebben a kategóriában több mint ötven függvényt találunk,
+ezek közül csak néhányat tekintünk át. Az OpenOffice.org
+Calc súgójában részletes magyarázatot olvashatunk minden
+pénzügyi függvényről.
+
+Az \textbf{FV} függvény egy befektetés jövőbeli
+értékét (Future Value) adja meg, állandó összegű
+befizetések és kamatláb mellett.
+
+Szintaxisa: FV(kamatláb;időszakok\_száma;részlet;jelenérték;típus).
+Az első három paraméter kötelező, a két utolsó opcionális.
+
+\Aref{FVFüggvény} ábrán látjuk, hogy elhelyezve százezer forintot
+(jelenérték) egy 12\% (kamatláb) évi kamatozású számlán
+és minden hó végén befizetve 20~000 forintot (részlet) 5
+éven át (időszakok száma) a számlán az öt év
+elteltével az FV függvénnyel meghatározható az összeg. 
+
+\begin{figure}[!h]
+\begin{center}
+\includegraphics[width=9.55cm]{oocalcv1-img125.png}
+\caption{FV függvény}\label{FVFüggvény}
+\end{center}
+\end{figure}
+
+Figyeljük meg, hogy azok a pénzösszegek, amelyek általunk
+befizetésre kerülnek negatív értékkel szerepelnek, a
+hozzánk befolyó összegek pozitív értéket kapnak. A havi
+kamatot az éves 12-ed részével adjuk meg (B2/12) és az
+időszakok száma szintén hónapokban szerepel (B3*12). A
+típus paramétert nem adtuk meg, mert a befizetések a hónapok
+végén történnek. Hó eleji törlesztés esetén az
+értéke 1 lenne.
+
+A \textbf{PV} függvény segítségével kiszámítható az az
+összeg, amelyre --  a mai napon, fix kamatozással befektetve, egy
+meghatározott számú időszak múlva --  egy adott összeget
+(annuitást) kapunk kézhez.  Megadható, hogy mennyi pénz
+maradjon az időszak letelte után. A függvényt a
+jelenérték (Present Value) meghatározásának is nevezik.
+
+Szintaxisa: PV(kamatláb; időszakok száma; részlet;
+jövőérték; típus). A jövőérték opcionális
+paraméterrel megadhatunk egy elérni kívánt értéket.
+Elhagyása esetén 0.
+
+A következő feladatban vizsgáljuk meg a PV függvény
+használatát.
+
+
+\section{29. feladat}
+
+{\itshape
+Vizsgáljuk meg, hogy érdemes-e megvenni 400~000~Ft-ért egy
+értékpapírt, ami havi rendszeres 8000~Ft jövedelmet kínál 5
+éven át. Az évi kamatláb 14\%.}
+
+Akkor érdemes megvenni az értékpapírt, ha kiszámított
+jelenérték 400~000~Ft vagy több. Számítsuk ki a PV
+függvénnyel (\ref{29-feladatPV} ábra).
+
+\begin{figure}[!h]
+\begin{center}
+\includegraphics[width=8.232cm]{oocalcv1-img126.png}
+\caption{29.  feladat --  PV függvény}\label{29-feladatPV}
+\end{center}
+\end{figure}
+
+Az öt éven át történő kifizetés jelen értéke csak
+343~816~Ft, tehát nem érdemes megvenni az értékpapírt.
+
+A \textbf{PMT} függvénnyel egy kölcsönre vonatkozó
+törlesztési összeget számíthatunk ki, állandó
+összegű törlesztőrészletek és kamatláb esetén.
+
+Szintaxisa:
+PMT(kamatláb;időszakok\_száma;jelenérték;jövőérték;típus).
+A jelenérték az a jelenbeli egyösszegű kifizetés, amely
+egyenértékű a jövőbeli kifizetések összegével. A
+jövőérték opcionális paraméter, az utolsó részlet
+kifizetése után elérni kívánt összeg. Amennyiben elhagyjuk,
+a függvény 0-nak tekinti.
+
+\Aref{29-feladatPMT} ábrán egy 5 millió forintos, 17\%-os éves
+kamatrátájú, 2 év alatt havi részletekben visszafizetendő
+kölcsön havi részleteit látjuk
+
+\begin{figure}[!h]
+\begin{center}
+\includegraphics[width=8.206cm]{oocalcv1-img127.png}
+\caption{29.  feladat --  PMT függvény}\label{29-feladatPMT}
+\end{center}
+\end{figure}
+
+A kiszámított összeg a tőketörlesztés összegét és a
+kamatokat adja meg, a kölcsönhöz kapcsolódó egyéb
+költségeket, mint pl. adó vagy kezelési költség nem
+tartalmazza. Megszorozva a kiszámított összeget a kifizetések
+számával megkapjuk a teljes kifizetendő összeget.
+Esetünkben:  10~427~869~Ft.
+
+A \textbf{PPMT} függvény egy hiteltörlesztésen belül a
+tőketörlesztés nagyságát számítja ki egy adott
+időszakra, adott nagyságú állandó
+törlesztőrészletek és állandó kamatláb mellett.
+Szintaxisa: PMT(kamat; időszak; időszakok száma;
+jelenérték; jövőérték; típus). A két utolsó
+paraméter opcionális.  A \textbf{jelenérték} az a jelenbéli
+egyösszegű kifizetés, amely egyenértékű a
+jövőbeli kifizetések összegével. A jövőérték az
+utolsó részlet kifizetése után elérni kívánt összeg.
+Elhagyása esetén a függvény 0-nak tekinti.
+
+Az \textbf{IPMT} függvény egy hiteltörlesztésen belül a
+kamattörlesztés nagyságát számítja ki egy adott
+időszakra, adott nagyságú állandó
+törlesztőrészletek és állandó kamatláb mellett.
+Paraméterei megegyeznek a PPMT függvényével.
+
+\Aref{29-feladatPPMT} ábrán egy 6 hónap futamidejű, 200~000~Ft-os hitel
+tőke- és kamattörlesztés havi értékeit és azok összegét látjuk.
+
+\begin{figure}[!h]
+\begin{center}
+\includegraphics[width=11.137cm]{oocalcv1-img128.png}
+\caption{29.  feladat --  PPMT függvény}\label{29-feladatPPMT}
+\end{center}
+\end{figure}
+
+
+\section{Statisztikai függvények}
+
+A statisztikai függvények közül az egyszerűbbeket
+áttekintettük a negyedik fejezetben. Most vizsgáljunk meg
+néhány olyan függvényt ebből a kategóriából,
+amelyeket gyakran használnak mind gazdasági elemzéseknél, mind
+mérnöki kutató munka során.
+
+Az \textbf{STDEV} függvény minta alapján becslést ad a
+szórásra. A szórás azt méri, hogy az értékek a
+várható értéktől (középértéktől) milyen
+mértékben térnek el. Szintaxisa: STDEV(szám1;szám2;...). Az
+argumentumok numerikus értékek vagy tartományok. Az STDEV
+függvény az argumentumokat statisztikai sokaság mintájának
+tekinti. Amikor az adatok a teljes sokaságot jelentik, akkor a
+szórást a \textbf{STDEVP} függvénnyel számítjuk ki. 
+
+Az STDEV függvény a szöveges és a logikai értékeket
+figyelmen kívül hagyja. Az \textbf{STDEVA} függvény a
+szórást úgy számítja ki, hogy a szöveget és a HAMIS
+logikai értéket nullának, az IGAZ logikai értéket padig 1-nek
+tekinti. A teljes sokaságra vett szórást, a logikai és
+szöveges argumentumokat is figyelembe véve a \textbf{STDEVPA}
+függvénnyel számítjuk ki.
+
+A \textbf{MEDIAN} függvény kiszámítja a számhalmaz
+középső értékét. Páratlan számú értéket
+tartalmazó halmazban a középső érték a halmaz közepén
+elhelyezkedő érték. Páros számú értéket tartalmazó
+halmazban a középső érték a halmaz közepén
+elhelyezkedő két érték átlaga. Szintaxisa:
+MEDIAN(szám1;szám2;...). A szöveget, a logikai értékeket és
+üres cellákat figyelmen kívül hagyja.
+
+A \textbf{MODE} függvény kiszámítja az adathalmazban
+leggyakrabban előforduló értéket. Amikor több, egyező
+gyakorisággal rendelkező érték létezik, akkor a
+függvény eredményül a legkisebbet adja. Hibát ír ki, ha egy
+érték nem jelenik meg kétszer. A szöveget, logikai
+értékeket és üres cellákat figyelmen kívül hagyja.
+
+A \textbf{GEOMEAN} függvény kiszámítja egy minta mértani
+közepét. Az argumentumai számok, számokat tartalmazó
+tömbök, nevek, vagy hivatkozások lehetnek. Negatív számokat
+és nullát nem tartalmazhat az argumentum. A szöveget, logikai
+értékeket és üres cellákat figyelmen kívül hagyja. Két
+szám esetén a mértani közép a két szám szorzatának a
+négyzetgyökével egyenlő.
+
+\Aref{StatisztikaiFüggvények2}  ábrán a tárgyalt statisztikai függvények
+eredményeit látjuk az A2:A11 tartományba írt számhalmazrai.
+
+\begin{figure}[!h]
+\begin{center}
+\includegraphics[width=10.37cm]{oocalcv1-img129.png}
+\caption{Statisztikai függvények}\label{StatisztikaiFüggvények2}
+\end{center}
+\end{figure}
+
+Az ebben a fejezetben tárgyalt függvények \aref{15-fejezetFüggvények}
+táblázatban láthatóak.
+
+\begin{table}[!h]
+\begin{center}
+\caption{A fejezetben tárgyalt függvények}\label{15-fejezetFüggvények}
+\begin{tabular}{|m{3cm}|m{8cm}|m{3.5cm}|}
+\hline
+ & & \multicolumn{1}{c|}{\textbf{Megfelelője a}} \\
+\multicolumn{1}{|c|}{\textbf{A függvény}}&
+\multicolumn{1}{c|}{\textbf{Funkciója}}&
+\multicolumn{1}{c|}{\textbf{magyar}} \\
+\multicolumn{1}{|c|}{\textbf{neve}} & &
+\multicolumn{1}{c|}{\textbf{Microsoft}} \\
+ & & \multicolumn{1}{c|}{\textbf{Excelben}} \\
+\hline
+FV & Egy befektetés jövőbeli értékét számítja ki. & JBÉ\\ \hline
+PV & Egy befektetés mai értékét számítja ki. & MÉ\\ \hline
+PMT & A kölcsönre vonatkozó törlesztési összeget számítja ki. &
+RÉSZLET\\ \hline
+IPMT & A kamattörlesztés nagyságát számítja ki. & RRÉSZLET\\ \hline
+PPMT & A tőketörlesztés nagyságát számítja ki. & PRÉSZLET\\ \hline
+STDEV & Minta alapján becslést ad a szórásra. & SZÓRÁS\\ \hline
+STDEVP & Sokaság egészéből kiszámítja annak szórását. & SZÓRÁSP\\ \hline
+STDEVA & Minta alapján becslést ad a szórásra. Szöveges és logikai
+értékek is lehetnek argumentumok. & SZÓRÁSA\\ \hline
+STDEVPA & Sokaság egészéből kiszámítja annak szórását.
+Szöveges és logikai értékek is lehetnek argumentumok. & SZÓRÁSPA\\ \hline
+MEDIAN & Kiszámítja a számhalmaz középső értékét. & MEDIÁN\\ \hline
+MODE & Kiszámítja az adathalmazban leggyakrabban előforduló
+értéket. & MÓDUSZ\\ \hline
+GEOMEAN & Kiszámítja egy minta mértani közepét. & MÉRTANI.KÖZÉP\\ \hline
+\end{tabular}
+\end{center}
+\end{table}
+
