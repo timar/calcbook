@@ -1,3 +1,5 @@
 Pallay Ferenc – Az OpenOffice.org Calc használata – Táblázatkezelés az alapoktól 
-fordítás: pdflatex oo_calc_v2.tex
+PDF-generálás: 
+$ pdflatex oo_calc_v2.tex
 
+A parancsot kétszer kell kiadni, hogy a linkek is jól beforduljanak.
